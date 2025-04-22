@@ -32,29 +32,19 @@
   </nav>
 
   <div class="container mt-5">
-    <h2 class="mb-4">Tabela de Livros</h2>
+    <h2 class="mb-4">Tabela de Cidade</h2>
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">Nome</th>
-          <th scope="col">Autor</th>
-          <th scope="col">Editora</th>
-          <th scope="col">Gênero</th>
-          <th scope="col">Preço</th>
-          <th scope="col">Data Publicação</th>
-          <th scope="col">Status</th>
+          <th scope="col">Nome da Cidade</th>
+          <th scope="col">UF</th>
         </tr>
       </thead>
       <tbody>
-        {% for livros in livros %}
+        {% for cidade in cidades %}
         <tr>
-          <td>{{ livros.nome }}</td>
-          <td>{{ livros.autor }}</td>
-          <td>{{ livros.editora }}</td>
-          <td>{{ livros.genero }}</td>
-          <td>{{ livros.preco }}</td>
-          <td>{{ livros.data_plub }}</td>
-          <td>{{ livros.status }}</td>
+          <td>{{ cidade.nome }}</td>
+          <td>{{ cidade.uf }}</td>
         </tr>
         {% endfor %}
       </tbody>
